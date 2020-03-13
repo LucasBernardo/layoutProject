@@ -1,0 +1,244 @@
+//tamanhos de dispositivos
+$desktop: 1024px;
+$tablet: 768px;
+
+//fontes
+$ptSans: 'PT Sans', sans-serif;
+$playfairDisplay: 'Playfair Display', serif;
+$Roboto: 'Roboto', sans-serif;
+
+//cores
+$orange: #FFB266;
+$white: #FFFFFF;
+$black:#000000;
+$brown:#272727;
+$beige: #F5E5D9;
+$gray: #F6F6F6;
+$darkGray: #ddd;
+$darkWhite: #ccc;
+$grayBlue: #538cc6;
+
+//cores para teste
+$blue: #0000ff;
+$green: #7CFC00;
+
+html{
+    font-family: $Roboto;
+
+    .iconColor{
+        color: $grayBlue;
+    }
+
+    .imageBanner{
+        height: 50%;
+        width: 100%;
+    }
+
+    .imageInside{
+        height: 200px;
+        width: 200px;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 29%;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .row{
+        text-align: center;
+    }
+  
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+        .column  {
+            width: 25%;
+        }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column  {
+            /* width: 100%; */
+            width: 25%;
+        }
+    }
+}
+
+
+.corpo{
+    height: 100%;
+    width: 100%;
+
+    .destaques_semana{
+        width: 100%;
+
+        .header_destaques{
+            text-align: center;
+        }
+
+        .price_product{
+            color: $orange;
+        }
+    }
+
+    .articles_header{
+        text-align: center;
+    }
+
+    .playa{
+        color: $orange;
+    }
+
+    .fale_conosco{
+        .newsLetter{
+            width:100%;
+            text-align: center;
+
+            .container {
+                padding: 20px;
+              }
+              
+              input[type=text], input[type=submit] {
+                padding: 12px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid $darkWhite;
+                box-sizing: border-box;
+              }
+              
+              input[type=text]{
+                  width: 50%;
+              }
+              
+              input[type=submit] {
+                width: 25%; 
+                background-color: $grayBlue;
+                color: $white;
+                border: none;
+              }
+              
+              input[type=submit]:hover {
+                opacity: 0.8;
+              }
+        }
+
+        .footer_contact{
+            display: flex;
+
+            .first_icons, .help_list, .about_us_list, .services_list, .follow_us_list{
+                width: 20%;
+
+                ul{
+                    list-style:none;
+                }
+
+                .list_header{
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .footer{
+        background-color: $white;
+        overflow: hidden;
+        bottom: 0;
+        width: 100%;
+
+        a{
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        a:hover {
+            background-color: $darkGray;
+        }
+
+        a, a:hover{
+            color: $black;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    height: 150px;
+    width: 100%;
+
+    .header_top_infos{
+        background-color: $orange;
+        span{
+            margin-right: 20px;
+        }
+    }
+
+    .header_user_infos{
+        padding: 20px;
+        display: flex;
+        
+        .user_busca{
+           input{
+                border: none;
+                border-bottom: 1px solid  $black;
+           }
+        }
+        .logo{
+            font-size: 25px;
+            color: $orange;
+            text-align: center;
+        }
+        .user_login{
+            span{
+                margin-right:25px;
+            }
+            text-align: right;
+            color: $black;
+        }
+
+        .user_busca,.logo,.user_login{
+            width: 33%;
+        }
+    }
+
+    .header_itens_list{
+        overflow: hidden;
+        a{
+            margin-right: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: $darkGray;
+            color: $black;
+          }
+    }
+    
+    .header_top_infos, .header_itens_list{
+        padding: 10px;
+        text-align: center;
+    }
+}
+

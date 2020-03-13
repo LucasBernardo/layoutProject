@@ -1,0 +1,128 @@
+html {
+  font-family: "Roboto", sans-serif;
+  /* Create four equal columns that floats next to each other */
+  /* Clear floats after the columns */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */ }
+  html .iconColor {
+    color: #538cc6; }
+  html .imageBanner {
+    height: 50%;
+    width: 100%; }
+  html .imageInside {
+    height: 200px;
+    width: 200px; }
+  html .column {
+    float: left;
+    width: 29%;
+    padding: 10px;
+    margin: 20px; }
+  html .row {
+    text-align: center; }
+  html .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (max-width: 900px) {
+    html .column {
+      width: 25%; } }
+  @media screen and (max-width: 600px) {
+    html .column {
+      /* width: 100%; */
+      width: 25%; } }
+
+.corpo {
+  height: 100%;
+  width: 100%; }
+  .corpo .destaques_semana {
+    width: 100%; }
+    .corpo .destaques_semana .header_destaques {
+      text-align: center; }
+    .corpo .destaques_semana .price_product {
+      color: #FFB266; }
+  .corpo .articles_header {
+    text-align: center; }
+  .corpo .playa {
+    color: #FFB266; }
+  .corpo .fale_conosco .newsLetter {
+    width: 100%;
+    text-align: center; }
+    .corpo .fale_conosco .newsLetter .container {
+      padding: 20px; }
+    .corpo .fale_conosco .newsLetter input[type=text], .corpo .fale_conosco .newsLetter input[type=submit] {
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box; }
+    .corpo .fale_conosco .newsLetter input[type=text] {
+      width: 50%; }
+    .corpo .fale_conosco .newsLetter input[type=submit] {
+      width: 25%;
+      background-color: #538cc6;
+      color: #FFFFFF;
+      border: none; }
+    .corpo .fale_conosco .newsLetter input[type=submit]:hover {
+      opacity: 0.8; }
+  .corpo .fale_conosco .footer_contact {
+    display: flex; }
+    .corpo .fale_conosco .footer_contact .first_icons, .corpo .fale_conosco .footer_contact .help_list, .corpo .fale_conosco .footer_contact .about_us_list, .corpo .fale_conosco .footer_contact .services_list, .corpo .fale_conosco .footer_contact .follow_us_list {
+      width: 20%; }
+      .corpo .fale_conosco .footer_contact .first_icons ul, .corpo .fale_conosco .footer_contact .help_list ul, .corpo .fale_conosco .footer_contact .about_us_list ul, .corpo .fale_conosco .footer_contact .services_list ul, .corpo .fale_conosco .footer_contact .follow_us_list ul {
+        list-style: none; }
+      .corpo .fale_conosco .footer_contact .first_icons .list_header, .corpo .fale_conosco .footer_contact .help_list .list_header, .corpo .fale_conosco .footer_contact .about_us_list .list_header, .corpo .fale_conosco .footer_contact .services_list .list_header, .corpo .fale_conosco .footer_contact .follow_us_list .list_header {
+        font-weight: 600;
+        margin-bottom: 5px; }
+  .corpo .footer {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%; }
+    .corpo .footer a {
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px; }
+    .corpo .footer a:hover {
+      background-color: #ddd; }
+    .corpo .footer a, .corpo .footer a:hover {
+      color: #000000; }
+
+.header {
+  height: 150px;
+  width: 100%; }
+  .header .header_top_infos {
+    background-color: #FFB266; }
+    .header .header_top_infos span {
+      margin-right: 20px; }
+  .header .header_user_infos {
+    padding: 20px;
+    display: flex; }
+    .header .header_user_infos .user_busca input {
+      border: none;
+      border-bottom: 1px solid #000000; }
+    .header .header_user_infos .logo {
+      font-size: 25px;
+      color: #FFB266;
+      text-align: center; }
+    .header .header_user_infos .user_login {
+      text-align: right;
+      color: #000000; }
+      .header .header_user_infos .user_login span {
+        margin-right: 25px; }
+    .header .header_user_infos .user_busca, .header .header_user_infos .logo, .header .header_user_infos .user_login {
+      width: 33%; }
+  .header .header_itens_list {
+    overflow: hidden; }
+    .header .header_itens_list a {
+      margin-right: 10px;
+      text-align: center;
+      text-decoration: none; }
+    .header .header_itens_list a:hover {
+      background-color: #ddd;
+      color: #000000; }
+  .header .header_top_infos, .header .header_itens_list {
+    padding: 10px;
+    text-align: center; }
